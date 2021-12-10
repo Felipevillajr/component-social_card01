@@ -1,6 +1,8 @@
 .socialcard {
+  max-width: 681px;
+  max-height: 733px;
   width: 80vw;
-  height: 80vh;
+  height: 70vh;
   border-top: 2px solid rgba(0, 0, 0, 0.61);
   border-bottom: 2px solid rgba(0, 0, 0, 0.61);
   &__top {
@@ -75,7 +77,7 @@
     }
     &__textbox {
       width: 575px;
-      height: 400px;
+      height: 420px;
       border: 2px solid rgb(54, 54, 54);
       display: flex;
       justify-content: flex-start;
@@ -85,7 +87,65 @@
       position: relative;
       left: 0.5rem;
       overflow: hidden;
-      //   padding: 0.5rem;
+
+      &__posttitle {
+        font-weight: 800;
+        margin-bottom: 0.4rem;
+      }
+      &__postcontent {
+        margin-bottom: 0.6rem;
+      }
+      &__postlink {
+        color: gray;
+      }
+    }
+    &__text {
+      padding: 0.7rem;
+      padding-top: 1rem;
+    }
+  }
+  &__bot {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__commenticon {
+      width: auto;
+      height: 35px;
+      position: relative;
+      left: 4rem;
+    }
+    &__comment {
+      position: relative;
+      left: 4.2rem;
+    }
+    &__reposticon {
+      width: auto;
+      height: 40px;
+      position: relative;
+      left: 5rem;
+    }
+    &__repost {
+      position: relative;
+      left: 5.2rem;
+    }
+    &__likedicon {
+      width: auto;
+      height: 35px;
+      position: relative;
+      left: 6rem;
+    }
+    &__liked {
+      position: relative;
+      left: 6.2rem;
+    }
+    &__mailicon {
+      width: auto;
+      height: 35px;
+      position: relative;
+      left: 7rem;
     }
   }
 }
